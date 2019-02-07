@@ -9,7 +9,7 @@ import React, { Component } from 'react';
        <div className="fbpostitem">
          <p>{content}</p>
          <p>Liked by {interaction}</p>
-         <a class="btn like">Like</button>
+         <a className="btn like">Like</button>
        </div>
      );
    }

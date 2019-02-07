@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Profil from './components/Profil';
-import Id from './components/Profil'
+import User from './components/User'
+import Post from './components/Post'
 
 
 //Here I will define a user const containing static values
@@ -28,7 +29,8 @@ class App extends Component {
   render() {
     return (
       <div className="fbctn">
-         <Users name={user.info.forname} />
+         <User name={user.info.forname} />
+         <Profil content={user.info} />
          <Post item={user.post} />
        </div>
     );
